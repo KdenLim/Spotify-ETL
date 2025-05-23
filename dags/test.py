@@ -8,9 +8,7 @@ from sqlalchemy import create_engine
 from airflow.hooks.base import BaseHook
 import requests
 from airflow.models import Variable
-from tabulate import tabulate
 import pytz
-import base64
 
 # Setting up variables
 conn = BaseHook.get_connection("spotify_api")
@@ -109,7 +107,6 @@ def _get_recently_played_tracks():
     }
 
     song_df = pd.DataFrame(song_dict, columns = ["song_name","album_name", "artist_name", "played_at", "timestamp"])
-    print(tabulate(song_df))
     print(song_df)
 
     sql_query = """
