@@ -3,5 +3,6 @@ A data pipeline which retrieves tracks played in the last 24 hours on Spotify an
 ~
 
 MySQL query example:
-![image](https://github.com/user-attachments/assets/747d55c8-a4e7-477d-bab9-323c616d24eb)
+![image](https://github.com/user-attachments/assets/7fb64901-d15d-46fc-a6d0-75ae8fc9f4a0)
+
 
